@@ -40,6 +40,7 @@ const App: () => React$Node = () => {
               <Text> Thiago Doria</Text>
               <Text> Igor Rosmaninho</Text>
               <Text> Murilo Marchioni</Text>
+              <Text> Allef Fante</Text>
               <Text> teste</Text>
             </View>
           )}
