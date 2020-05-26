@@ -120,6 +120,15 @@ const styles = StyleSheet.create({
     paddingRight: 12,
     textAlign: 'right',
   },
+  // Inserting primary button (CSS to React)
+  primaryButton: {
+    position:'absolute',
+    width:'328px',
+    height:'48px',
+    left:'31px',
+    top:'733px'
+  }
+
 });
 
 export default App;
