@@ -12,8 +12,10 @@ import {
   StyleSheet,
   ScrollView,
   View,
+  Image,
   Text,
   StatusBar,
+  TextInput,
 } from 'react-native';
 
 import {
@@ -27,6 +29,7 @@ import {
 const App: () => React$Node = () => {
   return (
     <>
+<<<<<<< HEAD
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <ScrollView
@@ -46,43 +49,30 @@ const App: () => React$Node = () => {
               <Text> teste murilo</Text>
               <Text>Rogério Yukio</Text>
               <Text>Gabriel Rodrigues</Text>      
+=======
+      <View style={{backgroundColor: '#000000', flex: 1, flexDirection: "column"}}>
+        <Image source= {{uri: 'https://logodownload.org/wp-content/uploads/2014/04/mercedes-benz-logo.png'}}
+        style = {{ width: 300, height:300, alignSelf: 'center', marginVertical: 48}}/>
+>>>>>>> f437d1c5d337c99d6fdf04324d1866a5a136b98d
 
-            </View>
-          )}
-          <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step One</Text>
-              <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> to change this
-                screen and then come back to see your edits.
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-            </View>
-            <LearnMoreLinks />
-          </View>
-        </ScrollView>
-      </SafeAreaView>
+        <View style={{ borderRadius: 8, margin: 16, }}> 
+          <Text style={{color: '#fff', fontSize: 14, marginTop: 8}}>E-mail</Text>
+          <TextInput style= {{ color:'#000' ,backgroundColor: '#ffffff', height: 40, marginVertical: 16}}>Digite seu e-mail</TextInput>
+        </View>
+        <View style={{ borderRadius: 8, margin: 16, }}> 
+          <View style= {{flexDirection: "row",  justifyContent: "space-between"}}>
+            <Text style={{color: '#fff', fontSize: 14, marginTop: 8}}>Senha</Text>
+            <Text style={{color: '#fff', textDecorationLine: "underline", fontSize: 16, fontWeight: "bold"}}>Esqueci minha senha</Text>
+         </View>
+          <TextInput style= {{ color:'#000' ,backgroundColor: '#ffffff', height: 40, marginTop: 16, marginBottom: 8}}>Digite sua senha</TextInput>
+          <Text style={{color: '#Fff', fontSize: 12, fontWeight: "bold" }}>Senha incorreta</Text>
+        </View>
+      </View>
     </>
   );
 };
 
+<<<<<<< HEAD
 const styles = StyleSheet.create({
   scrollView: {
     backgroundColor: Colors.lighter,
@@ -120,6 +110,15 @@ const styles = StyleSheet.create({
     paddingRight: 12,
     textAlign: 'right',
   },
+  // Inserting primary button (CSS to React)
+  primaryButton: {
+    position:'absolute',
+    width:'328px',
+    height:'48px',
+    left:'31px',
+    top:'733px'
+  }
+
 });
 
 export default App;
