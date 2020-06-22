@@ -1,4 +1,4 @@
-import Reactimport { Component } from 'react'
+/*import Reactimport { Component } from 'react'
 import {
     View,
     Text,
@@ -96,3 +96,4 @@ backgroundColor: '#EEE',
     })
 
     export defaut AddPhoto;
+    */
