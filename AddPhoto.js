@@ -54,8 +54,7 @@ export default class AddPhoto extends Component {
 
                     <Text style={styles.imputLabel}>Justifique:</Text>
                     <TextInput placeholder='Algum comentário para a foto?'
-                    style={styles.imputText}
-                     value={this.state.comment}
+                    style={styles.input} value={this.state.comment}
                      onChangeText={comment => this.setState({ comment })}/>
 
                      <TouchableOpacity onPress={this.save} style={styles.primaryButton}>
