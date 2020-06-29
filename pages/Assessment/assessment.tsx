@@ -38,7 +38,7 @@ import {
          <View style={{flex: 0.2, flexDirection: "column"}}>
              {/* < FlatList data={nomes} keyExtractor={extractKey} renderItem={listItem} /> */}
             
-             <TouchableOpacity style= {styles.secondaryButton} onPress={() => navigation.navigate('NewAssessment')}>
+             <TouchableOpacity style= {styles.secondaryButton} onPress={() => navigation.push('NewAssessment')}>
              <Text style= {{ color: '#fff',fontSize: 16, padding: 1, fontWeight: 'bold', alignSelf: 'center' }}> Nova Avaliação </Text>
              </TouchableOpacity>
 

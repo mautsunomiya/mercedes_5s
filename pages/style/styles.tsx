@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+import { forSlideLeft } from '@react-navigation/stack/lib/typescript/src/TransitionConfigs/HeaderStyleInterpolators';
 
 const styles = StyleSheet.create ({
 
@@ -20,6 +21,13 @@ const styles = StyleSheet.create ({
         backgroundColor: '#f5f5f5',
         marginVertical: 16,
         padding: 12,
+    },cardContainer: {
+        padding: 12,
+        borderWidth:1,
+        borderColor: '#000'
+    },dddtBox:{
+        display: "flex",
+        flexDirection: "row",
     },
     
 
@@ -40,6 +48,8 @@ const styles = StyleSheet.create ({
         fontSize: 16, marginTop: 16, fontWeight: 'bold'
     },h4:{
         fontSize: 14, fontWeight: 'bold'
+    },dt:{
+        fontSize: 16, alignSelf: 'flex-end'
     },
     
     

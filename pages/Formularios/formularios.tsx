@@ -34,7 +34,7 @@ import {
       })
       .catch(error => console.log(error));
       }
-      
+
 
 render() {
   const { navigation } = this.props;
@@ -46,10 +46,12 @@ render() {
           data={this.state.docs}
           keyExtractor={(item) => item.id}
           renderItem={({item}) => (
-            <View>
-              <Text style={styles.h2}>Centro de custo: {item.Cost_center_id}</Text>
-              <Text style={styles.bodyText}>Nota: {item.Answer_average_5s}</Text>
-              <Text style={styles.bodyText}>Data da avaliação: {item.createdAt}</Text>
+            <View style={styles.cardContainer}>
+              <View style={styles.dddtBox}>
+                <Text style={styles.h2}>Centro de custo: {item.Cost_center_id}</Text>
+                <Text style={styles.dt}>Nota: {item.Answer_average_5s}</Text>
+              </View>
+              <Text style={styles.BodyTextSecondary}>Data da avaliação: {item.createdAt}</Text>
 
               
                 
