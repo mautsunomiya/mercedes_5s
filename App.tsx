@@ -22,6 +22,7 @@ import Resultado from './pages/Assessment/NewAssessment/resultado'
 import Info from './pages/Info/info'
 import Formularios from './pages/Formularios/formularios'
 import Ranking from './pages/Ranking/ranking'
+import RankingDetalhes from './pages/Ranking/ranking-detalhe'
 import Perfil from './pages/Perfil/perfil'
 import AddPhoto from './AddPhoto';
 
@@ -47,6 +48,7 @@ function StackAssessment (){
         <Stack.Screen name="Resultado" component={Resultado} options={{title: 'Nova avaliação'}}/>
         <Stack.Screen name="Login" component={Login} options={{title: ''}}/>
         <Stack.Screen name="Evidencia" component={AddPhoto} options={{title: 'Evidencia'}}/>
+        <Stack.Screen name="RankingDetalhes" component={RankingDetalhes} options={{title: 'Detalhe'}}/>
   </Stack.Navigator>
   )}
 

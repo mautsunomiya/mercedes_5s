@@ -14,16 +14,7 @@ import {
 
 
   export default function Assessment({navigation}) {
-    // const nomes = [{nome: 'Amanda', idade: 23},{nome: 'Jorge', idade: 43},{nome: 'Giu', idade: 56}]
-    
-    // const extractKey = item => item
 
-    // const listItem = ({item}) => (
-    //     <View style={{flexDirection:'row', }}>
-    //         <Text style={{fontSize:120}}> {item.nome} </Text>
-    //         <Text> {item.idade} </Text>
-    //     </View>
-    // )
     
     const styles = StyleSheet.create ({
         secondaryButton: {
